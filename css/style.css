@@ -239,4 +239,10 @@ font-size:34px;
 font-size:28px;
 }
 
+  
+.logo-area img {
+  height: 50px;
+  width: auto;
+}
+  
 }

@@ -1,155 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="img/favicon.png" />
-  <title>HOME</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0; url=home.html" />
+  <link rel="canonical" href="home.html" />
+  <script>
+    window.location.replace('home.html');
+  </script>
 </head>
-
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__container">
-        <a href="index.html" class="header__logo logo" style="display:flex;align-items:center;gap:0.5em;">
-          <img src="img/Logo2.png" alt="Logo" style="height:5rem;width:auto;display:inline-block;vertical-align:middle;">
-          <span style="display:flex;flex-direction:column;max-width:18em;font-family:'Playfair Display','Montserrat Alternates','Quicksand','Montserrat','Nunito','Inter',sans-serif;">
-            <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">ChirVaani Innovations</span>
-            <span class="header__tagline" style="font-size:0.95rem; font-weight:400; color:#FFC94D; line-height:1.2; margin-top:0.1em; letter-spacing:0.02em;">Sparkling Ideas. Speaking Solutions.</span>
-          </span>
-        </a>
-        <div class="header__navigation">
-          <div class="header__menu menu">
-            <nav class="menu__body">
-              <nav class="menu__body">
-                <ul class="menu__list">
-                  <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-                  <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
-                  <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-                  <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
-                </ul>
-                <a href="#" class="actions-header__button">CTA Button</a>
-              </nav>
-          </div>
-          <div class="header__actions actions-header">
-            <button type="button" class="menu__icon icon-menu"><span></span></button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="page">
-      <section class="page__main main">
-        <div class="main__container">
-          <h3 class="main__caption">IT Consultancy & Solutions</h3>
-          <h1 class="main__title" style="color:#FFC94D;">ChirVaani Innovations</h1>
-          <div class="main__text" style="color:#FFC94D;">
-            Transforming businesses with expert IT consulting, software development, and digital solutions tailored for every industry.
-          </div>
-          <a href="services.html" class="main__button">Explore Services</a>
-        </div>
-      </section>
-      <section class="page__about about">
-        <div class="about__container">
-          <div class="about__image"><img src="img/services/background.jpg" alt="cover image" /></div>
-          <div class="about__content">
-            <h2 class="about__title title">About Us</h2>
-            <div class="about__text">
-              <p>
-                ChirVaani Innovations delivers end-to-end IT consultancy, software development, and digital transformation services. Our experienced team is dedicated to helping clients achieve operational excellence and sustainable growth through technology.
-              </p>
-              <p>
-                We combine deep industry knowledge with a passion for innovation, ensuring every solution is robust, secure, and future-ready.
-              </p>
-            </div>
-            <a href="about.html" class="about__button button">Learn More</a>
-          </div>
-        </div>
-      </section>
-      <section class="page__services services">
-        <div class="services__container">
-          <h2 class="services__title title">Our Services</h2>
-          <div class="services__row">
-            <div class="services__column">
-              <div class="services__item item-services">
-                <a class="item-services__top" href="#">
-                  <div class="item-services__image">
-                    <img src="img/home/services_placeholder.jpg" alt="img" />
-                  </div>
-                  <h3 class="item-services__title">Software Development</h3>
-                </a>
-                <div class="item-services__text">
-                  Crafting custom software solutions for diverse platforms, devices, and industries.
-                </div>
-                <a href="#" class="item-services__button button">CTA Button</a>
-              </div>
-            </div>
-            <div class="services__column">
-              <div class="services__item item-services">
-                <a class="item-services__top" href="#">
-                  <div class="item-services__image">
-                    <img src="img/home/services_placeholder.jpg" alt="img" />
-                  </div>
-                  <h3 class="item-services__title">IT Consultancy & Project Management</h3>
-                </a>
-                <div class="item-services__text">
-                  Expert guidance in system analysis, IT project management, and digital transformation.
-                </div>
-                <a href="#" class="item-services__button button">CTA Button</a>
-              </div>
-            </div>
-            <div class="services__column">
-              <div class="services__item item-services">
-                <a class="item-services__top" href="#">
-                  <div class="item-services__image">
-                    <img src="img/home/services_placeholder.jpg" alt="img" />
-                  </div>
-                  <h3 class="item-services__title">Cloud & IT Infrastructure</h3>
-                </a>
-                <div class="item-services__text">
-                  Scalable cloud platforms, SaaS, and secure IT infrastructure for modern businesses.
-                </div>
-                <a href="#" class="item-services__button button">CTA Button</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="page__testimonial testimonial">
-        <div class="testimonial__container">
-          <h3 class="testiomonial__caption">Client Testimonial</h3>
-          <h2 class="testimonial__title title">
-            "ChirVaani Innovations helped us streamline our operations and embrace digital transformation. Their expertise and dedication are unmatched."
-          </h2>
-          <div class="testimonial__item item-testimonial">
-            <div class="item-testimonial__image">
-              <img src="img/home/user.png" alt="user" />
-            </div>
-            <h4 class="item-testimonial__title">A. Sharma</h4>
-            <div class="item-testimonial__caption">CTO, Client Company</div>
-          </div>
-        </div>
-      </section>
-      <section class="page__outro outro outro_home">
-        <div class="outro__container">
-          <h2 class="outro__title title">Let's Talk IT</h2>
-          <div class="outro__text">
-            Connect with ChirVaani Innovations to discover how our IT expertise can drive your business forward.
-          </div>
-          <a href="contact.html" class="outro__button button">Contact Us</a>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__container">
-        <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
-        <a href="index.html" class="footer__logo logo">ChirVaani Innovations</a>
-        <div class="footer__copyright">Copyright © 2025 ChirVaani Innovations – All Rights Reserved</div>
-      </div>
-    </footer>
-  </div>
-  <script src="js/script.js"></script>
+  <p>If you are not redirected automatically, <a href="home.html">click here</a>.</p>
 </body>
-
 </html>

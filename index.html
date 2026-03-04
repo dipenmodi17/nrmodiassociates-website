@@ -8,55 +8,74 @@
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
 font-family: Arial, Helvetica, sans-serif;
-margin:0;
 background:#f5f5f5;
 color:#333;
+line-height:1.6;
 }
+
+/* HEADER */
 
 header{
 background:#0d1b2a;
 color:white;
-padding:20px 40px;
+padding:18px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
 header h1{
-margin:0;
-font-size:24px;
-letter-spacing:1px;
+font-size:22px;
+letter-spacing:2px;
 }
 
 nav a{
 color:white;
-margin-left:20px;
+margin-left:25px;
 text-decoration:none;
 font-weight:500;
 }
 
 nav a:hover{
-text-decoration:underline;
+color:#f4c430;
 }
 
+/* HERO */
+
 .hero{
+height:500px;
 background:url("img/hero.jpg") center/cover no-repeat;
-height:420px;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-color:white;
 }
 
-.hero h2{
-font-size:42px;
-background:rgba(0,0,0,0.5);
-padding:20px 30px;
-border-radius:5px;
+.hero-text{
+background:rgba(0,0,0,0.55);
+padding:40px;
+color:white;
+border-radius:6px;
 }
+
+.hero-text h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:18px;
+}
+
+/* SECTION */
 
 .container{
 max-width:1100px;
@@ -65,29 +84,46 @@ padding:60px 20px;
 }
 
 .section-title{
-font-size:28px;
-margin-bottom:20px;
 text-align:center;
+font-size:30px;
+margin-bottom:40px;
+color:#0d1b2a;
 }
+
+/* SERVICES */
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
-margin-top:40px;
 }
 
 .service{
 background:white;
-padding:25px;
+padding:30px;
 border-radius:6px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service:hover{
+transform:translateY(-5px);
 }
 
 .service h3{
-margin-top:0;
+margin-bottom:10px;
 color:#0d1b2a;
 }
+
+/* ABOUT */
+
+.about{
+background:white;
+padding:50px 20px;
+text-align:center;
+}
+
+/* CONTACT */
 
 .contact{
 background:#0d1b2a;
@@ -96,14 +132,21 @@ padding:60px 20px;
 text-align:center;
 }
 
-.contact p{
-margin:8px 0;
+.contact h2{
+margin-bottom:15px;
 }
 
+.contact p{
+margin:6px 0;
+}
+
+/* FOOTER */
+
 footer{
+background:#eee;
 text-align:center;
 padding:20px;
-background:#eee;
+font-size:14px;
 }
 
 </style>
@@ -113,6 +156,7 @@ background:#eee;
 
 <header>
 <h1>NR MODI & ASSOCIATES</h1>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
@@ -123,37 +167,53 @@ background:#eee;
 
 
 <section class="hero">
+<div class="hero-text">
 <h2>Your Trusted Legal Partner</h2>
+<p>Professional legal and business advisory services</p>
+</div>
 </section>
 
 
 <section class="container">
 
-<h2 class="section-title">Our Legal Services</h2>
+<h2 class="section-title">Practice Areas</h2>
 
 <div class="services">
 
 <div class="service">
-<h3>Corporate & Business Consulting</h3>
-<p>Advising businesses on regulatory compliance, contracts, and corporate governance.</p>
+<h3>Corporate Law</h3>
+<p>Legal advisory for businesses including contracts, compliance and corporate structuring.</p>
 </div>
 
 <div class="service">
-<h3>Insurance & Financial Advisory</h3>
-<p>Guidance on insurance compliance, financial structuring, and industry regulation.</p>
+<h3>Insurance Consulting</h3>
+<p>Specialized advisory services related to insurance operations and regulatory matters.</p>
 </div>
 
 <div class="service">
-<h3>Technology & IT Consulting</h3>
-<p>Legal consulting related to technology contracts, systems compliance, and digital operations.</p>
+<h3>Technology & IT Advisory</h3>
+<p>Consulting on technology contracts, digital systems, and regulatory compliance.</p>
 </div>
 
 <div class="service">
-<h3>International Business Advisory</h3>
-<p>Support for cross-border operations, legal documentation, and global consulting.</p>
+<h3>International Business</h3>
+<p>Support for cross-border consulting, documentation, and business operations.</p>
 </div>
 
 </div>
+
+</section>
+
+
+<section class="about">
+
+<h2 class="section-title">About Our Firm</h2>
+
+<p>
+NR Modi & Associates provides professional consulting services in legal, insurance, 
+technology and international business advisory. Our focus is delivering practical, 
+business-oriented solutions with professionalism and integrity.
+</p>
 
 </section>
 
